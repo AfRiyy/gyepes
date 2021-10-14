@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Gyepes</title>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <div class="nav-item">
+          <a class="nav-link active" href="index.html">Főoldal</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="about.html">Névjegy</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="github.html">GitHub</a>
+        </div>
+    </div>
+    <h1>Gyeptéga mennyiség számoló</h1>
+    <form>
+        <div class="mb-3">
+          <label for="diameter" class="form-label">Telek átmérő</label>
+          <input type="number" class="form-control" id="diameter" aria-describedby="diameter">
+        </div>
+        <div class="mb-3">
+            <label for="result" class="form-label">Eredmény</label>
+            <input type="text" class="form-control" id="result" aria-describedby="result" disabled>
+          </div>
+        <div id ="animate"><button type="button" id="calcButton" class="btn btn-primary">Számol</button></div>
+    </form>
+</div>   
+<script src="app.js"></script>
+</body>
+</html>
